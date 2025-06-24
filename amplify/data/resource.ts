@@ -10,6 +10,13 @@ const schema = a.schema({
   Todo: a
     .model({
       content: a.string(),
+      date: a.date(), 
+      pumpstation: a.string(),
+      status:a.string(), 
+      top: a.float(),
+      bottom: a.float(),  
+      lat: a.float(),
+      long: a.float(),
      }).authorization(allow => [allow.owner()]),
 });
 
